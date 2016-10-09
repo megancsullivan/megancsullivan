@@ -1,20 +1,94 @@
-body{
-  background-color:#181A19;
-  width:100%;
-  height:100%;
-  font-family:Roboto, sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
-#tick-outline-bg{
-  opacity:0.2;
+a {
+  text-decoration: none;
 }
 
-#cross-outline-bg{
-  opacity:0.2;
+div.column {
+  width: 300px;
 }
 
-#yes, #no{
-  font-size:50px;
-  text-align:center;
-  color:#ecf0f1;
+/* Contact Button */
+.sidebar_contact_block {
+color: #ffffff;
+font-size: 220%;
+font-weight: 300;
+color: #ffffff;
+letter-spacing: -.04em;
+display: block;
+padding: 1em .5em 1em .5em;
+background-color: #65B891;
+background-image: url('http://modwheel.org/codepen/paper-plane-up.svg');
+background-position: 92% 110%;
+background-size: 32%;
+background-repeat: no-repeat;
+-webkit-transition: background-position .25s, background-color .25s, background-size .25s;
+transition: background-position .25s, background-color .25s, background-size .25s;
+}
+
+.sidebar_contact_block:hover {
+background-color: #2D3142;
+background-position: 110% 30%;
+background-size: 20%;
+}
+
+.sidebar_contact_block h4 {
+font-size: .4em;
+letter-spacing: -.02em;
+font-weight: 400;
+margin-top: .2em;
+margin-bottom: .4em;
+}
+
+.sidebar_contact_block h3 {
+font-size: 1.5em;
+letter-spacing: -.02em;
+text-transform: uppercase;
+font-weight: 800;
+line-height: 1em;
+margin: 0 0 .2em 0;
+}
+
+.sidebar_contact_block hr {
+margin: 0;
+width: 40%;
+border-bottom: 1px solid #ffffff;
+border-top: 0;
+transition: width .25s;
+-webkit-transition: width .25s;
+}
+
+.sidebar_contact_block hr.short {
+  width: 0;
+}
+
+.sidebar_contact_block:hover hr {
+  width: 0;
+}
+
+.sidebar_contact_block:hover hr.short {
+  width: 90%;
+}
+
+.multi {
+  position: relative;
+  background-color: #F25F5C;
+}
+
+.multi:hover {
+  background-color: #70C1B3;
+}
+
+.multi:before {
+  content: " ";
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMCIgeT0iMCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSI0NiIgdmlld0JveD0iMCwgMCwgMzAwLCA0NiI+DQogIDxnIGlkPSJMYXllcl8xIj4NCiAgICA8cGF0aCBkPSJNMCwwIEw2MCwwIEw2MCw0NiBMMCw0NiBMMCwwIHoiIGZpbGw9IiM1MDUxNEYiLz4NCiAgICA8cGF0aCBkPSJNNjAsMCBMMTIwLDAgTDEyMCw0NiBMNjAsNDYgTDYwLDAgeiIgZmlsbD0iI0YyNUY1QyIvPg0KICAgIDxwYXRoIGQ9Ik0xMjAsMCBMMTgwLDAgTDE4MCw0NiBMMTIwLDQ2IEwxMjAsMCB6IiBmaWxsPSIjRkZFMDY2Ii8+DQogICAgPHBhdGggZD0iTTE4MCwwIEwyNDAsMCBMMjQwLDQ2IEwxODAsNDYgTDE4MCwwIHoiIGZpbGw9IiMyNDdCQTAiLz4NCiAgICA8cGF0aCBkPSJNMjQwLDAgTDMwMCwwIEwzMDAsNDYgTDI0MCw0NiBMMjQwLDAgeiIgZmlsbD0iIzcwQzFCMyIvPg0KICA8L2c+DQo8L3N2Zz4NCjwhLS0gaHR0cHM6Ly9jb29sb3JzLmNvLzUwNTE0Zi1mMjVmNWMtZmZlMDY2LTI0N2JhMC03MGMxYjMgLS0+DQo=");
+  background-color: #7EAF77;
+  background-size: cover;
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
